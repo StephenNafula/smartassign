@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard · Assignment Formatter</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="auth-card">
+    <h2>Welcome, {{ user_name }}!</h2>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <div class="flash-list">
+          {% for cat, msg in messages %}
+            <div class="flash {{ cat }}">{{ msg }}</div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+    <p>Welcome, {{ user_name }}!</p>
+
+    {% if user_plan_info %}
+    <div class="user-plan-info card">
+        <h4>Your Current Plan: <span class="text-primary">{{ user_plan_info.plan_name }}</span></h4>
+        {% if user_plan_info.plan_type == 'one_time_document' %}
+        <p>Document Credits: <span class="text-success">{{ user_plan_info.document_credits }}</span></p>
+        {% elif user_plan_info.plan_type == 'monthly_subscription' %}
+        <p>Subscription ends: <span class="text-info">{{ user_plan_info.subscription_end_date.strftime('%Y-%m-%d') if user_plan_info.subscription_end_date else 'N/A' }}</span></p>
+        {% endif %}
+        <ul class="features-list-small">
+            {% for feature in user_plan_info.features %}
+            <li><i class="fas fa-check-circle"></i> {{ feature }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+
+    <h3>Your Assignments</h3>
+    {% if documents %}
+    <ul class="document-list">
+        {% for doc in documents %}
+        <li>
+            <a href="{{ url_for('editor', doc_id=doc.id) }}">
+                <strong>{{ doc.title or 'Untitled Document' }}</strong> ({{ doc.status }}) - Last updated: {{ doc.updated_at.strftime('%Y-%m-%d %H:%M') }}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>You haven't created any assignments yet. Start a new one!</p>
+    {% endif %}
+
+    <a href="{{ url_for('editor') }}" class="btn-primary">Go to Editor</a>
+
+    <a href="{{ url_for('plans') }}" class="btn btn-success">View Plans</a>
+
+    <form action="{{ url_for('logout') }}" method="POST" style="margin-top: 20px;">
+        <button type="submit" class="btn-ghost">Logout</button>
+  </div>
+</body>
+</html>
