@@ -5,7 +5,7 @@ Student Assist LMS is a lightweight web-based Learning Management System designe
 It includes:
 - 🔐 User authentication (Register & Login)  
 - 📝 Assignment editor with rich text formatting (using Quill.js)  
-- 💳 Payment integration (via Flutterwave) to unlock premium features  
+- 💳 Payment integration (via Intasend) to unlock premium features  
 - 🎨 Modern, responsive UI  
 
 ---
@@ -25,7 +25,7 @@ This LMS provides a **web-accessible platform** where students can log in, write
 - **Dashboard** → Simple and intuitive with navigation to assignments  
 - **Rich Text Editor** → Bold, italics, headings, bullet points, etc.  
 - **Payment Plans** → Different tiers (Free, Standard, Premium)  
-- **Checkout** → Flutterwave payment gateway integration  
+- **Checkout** → Intasend payment gateway integration  
 
 ---
 
@@ -33,8 +33,8 @@ This LMS provides a **web-accessible platform** where students can log in, write
 - **Backend**: Flask (Python)  
 - **Frontend**: HTML5, CSS3, Bootstrap/Tailwind, JavaScript  
 - **Editor**: Quill.js (rich text editor)  
-- **Payments**: Flutterwave (test & live modes)  
-- **Hosting**: To be deployed on [Heroku/Render] (future step)  
+- **Payments**: Intasend (test & live modes)  
+- **Hosting**: To be deployed on Render: https://smartassign-jgaf.onrender.com
 
 ---
 
@@ -42,5 +42,5 @@ This LMS provides a **web-accessible platform** where students can log in, write
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/student-assist-lms.git
-   cd student-assist-lms
+   git clone https://github.com/StephenNafula/smartassign.git
+   cd smartassign
