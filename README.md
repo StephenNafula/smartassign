@@ -1,5 +1,16 @@
 # Student Assist LMS 📚✨
 
+## Note for Hackathon Judges 🚀
+
+During the hackathon, our initial repository contained the early version of this project. However, due to backend and frontend hosting platform constraints, some features could not run as intended.  
+
+This repository (**https://smartassign-document-bo2j.bolt.host/**) is a refined continuation of the same idea, with fully working features, improved UI, and better code structure.  
+
+We decided to create a new repo: (**https://github.com/StephenNafula/smartassign-continued.git**) to present a clean, functional version for review while still staying true to our original hackathon concept.
+
+➡️ **We kindly request that this updated repository be considered for review , as it represents the complete and functional version of our hackathon project.**
+
+
 ## Overview
 Student Assist LMS is a lightweight web-based Learning Management System designed to help students **submit assignments easily**, while also addressing challenges like **slow devices, unstable internet, and lack of access to laptops**.  
 It includes:
@@ -37,13 +48,7 @@ This LMS provides a **web-accessible platform** where students can log in, write
 - **Hosting**: To be deployed on Render: https://smartassign-jgaf.onrender.com
 
 ---
-## Note for Hackathon Judges 🚀
 
-During the hackathon, our initial repository (https://smartassign-jgaf.onrender.com) contained the early version of this project. However, due to backend and frontend hosting platform constraints, some features could not run as intended.  
-
-This repository (**https://smartassign-document-bo2j.bolt.host/**) is a refined continuation of the same idea, with fully working features, improved UI, and better code structure.  
-
-We decided to create a new repo to present a clean, functional version for review while still staying true to our original hackathon concept.
 
 ## Team
 
