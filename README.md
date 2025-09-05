@@ -37,6 +37,27 @@ This LMS provides a **web-accessible platform** where students can log in, write
 - **Hosting**: To be deployed on Render: https://smartassign-jgaf.onrender.com
 
 ---
+## Note for Hackathon Judges 🚀
+
+During the hackathon, our initial repository (https://smartassign-jgaf.onrender.com) contained the early version of this project. However, due to backend and frontend hosting platform constraints, some features could not run as intended.  
+
+This repository (**https://smartassign-document-bo2j.bolt.host/**) is a refined continuation of the same idea, with fully working features, improved UI, and better code structure.  
+
+We decided to create a new repo to present a clean, functional version for review while still staying true to our original hackathon concept.
+
+## Team
+
+👤 **Stephen Mwaniki**  
+- Role: Backend & Payment Integration (Flask + IntaSend)  
+- Contributions: Authentication system, database setup, IntaSend payments integration, deployment setup.  
+
+👤 **Immaculate Kamunya**  
+- Role: Frontend & UI/UX  
+- Contributions: Designed the rich text editor interface, styling with modern UI components, user flows.  
+
+⚡ This project was built collaboratively in a *vibe coding* style, where we experimented, built, and refined the app step by step as a team.
+
+
 
 ## Installation & Setup
 
